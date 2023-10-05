@@ -1,0 +1,12 @@
+*{
+    
+    background-color: aqua;
+    border-color: black;
+}
+
+p em{
+    background-color: red;
+    font-family: cursive;
+    color: white;
+    
+}

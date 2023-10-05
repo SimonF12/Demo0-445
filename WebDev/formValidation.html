@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mydesign.css">
+    <script>
+        function display(form){
+            var msg = form.msg.value;
+            alert("Your enetered name: "+msg);
+        }
+    </script>
+</head>
+<body>
+    <p><em>A sample form example</em></p>
+    <form action="" method="GET">
+        <p>Enter Something in the box</p>
+        <input type="text" name="msg" placeholder="granny shawn">
+        <button onclick="display(this.form)">Click here</button>
+    </form>
+    <form action="">
+       <div>
+        <label for="country">Select your country:</label>
+        <select name="country" id="country">
+        <option value=" ">-------</option>
+        <option value="USA">USA</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Canada">Canada</option>
+        </select>
+        </div>
+        <br>
+        </form>
+        <body>
+            
+        </body>
+        <form>
+            <p>Sex:</p>
+            <input type="checkbox" id="Male" value="cs100" name="cs100">
+            <label for="Male">Male</label> <br>
+            <input type="checkbox" id="Female" value="cs101" name="cs101">
+            <label for="Female">Female</label> <br>
+            <input type="checkbox" id="Other" value="cs102" name="cs102">
+            <label for="Other">Other</label> <br>
+            <input type="reset"> <input type="submit">
+            </form>
+            
+</body>
+
+</html>
