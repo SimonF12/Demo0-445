@@ -6,10 +6,92 @@
     <title>Document</title>
 </head>
 <body>
+
+
+
+    <script>
+        const Student ={
+            Name: 'Nawaz',
+            ID: 102
+
+        }
+        const Student1 = new Object();
+        Student1.Name = 'Simon';
+        Student1.ID = 2;
+        
+        for (let p in Student1){
+            document.wite(Student1[p] + " ");
+        }
+    </script>
+
+
+
+    <!-- <script>
+        function Student(Name,ID,GPA,DEPT){
+            this.Name = Name;
+            this.ID = ID;
+            this.GPA = GPA;
+            this.DEPT = DEPT;
+        }
+        const std1 = new Student('Nawaz',1,0.01,'CS')
+
+        for(let p in std1){
+            document.write(std1[p] + " ");
+        }
+
+    </script> -->
+
+    <!-- 
+    <script>
+        function mul(x,y){
+            return x * Y;
+        }
+        let result = mul(3,4);
+        document.write(result);
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+        const names = ['Simon', 'Nawaz', 'The Goat'];
+        for (let i = 0; i < names.length; i++) {
+            document.write(names[i] + "<br>")
+            
+        }
+
+        for (let name of names){
+            document.write(name + " ");
+
+        }
+
+         let j = 0;
+         while(names[j]){
+             document.write(names[j] + "  ");
+             j++;
+         }
+    </script> -->
+
+
+
+
+    <!-- <script>
+
+        const pi =3.14;
+        const names = ['Simon', 'Jaffer', 'Nawaz']
+        const Student = {
+            Name: 'Markel',
+            ID: 101,
+            GPA: 0.00
+        };
+        document.write(names);
+        document.write(Student.Name + " " + Student.ID)
+    </script> -->
+
+    <!--
     <p>JavaScript can change HTML attribute values</p>
     <img id="imgpid" src="lightbulboff.jpg" alt="" >
     <button onclick="document.getElementById('imgpid').src='lightbulbon.jpg'">bulb on</button>
     <button onclick="document.getElementById('imgpid').src='lightbulboff.jpg'">bulb off</button>
-    
+    -->
 </body>
 </html>
