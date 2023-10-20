@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
-const morgan = require('morgan');
-app.use(morgan('dev'));
+// const morgan = require('morgan');
+// app.use(morgan('dev'));
 
 
     app.get("/", function(req, res){

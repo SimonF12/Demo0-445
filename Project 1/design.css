@@ -1,0 +1,27 @@
+*{
+    background-color: beige;
+    
+    
+}
+p em{
+    
+    font-size: x-large;
+}
+h2{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .image-row {
+    display: flex;
+    justify-content: space-between; /* this will add equal space between each image */
+  }
