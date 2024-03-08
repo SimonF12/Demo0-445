@@ -1,0 +1,24 @@
+body {
+ background-color: beige;
+}
+.button-container{
+    display:flex;
+    justify-content: space-between;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    color:chocolate;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
