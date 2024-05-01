@@ -1,0 +1,13 @@
+<h1>Search for a book</h1>
+
+<%if(count==0){%>
+<h2>No such book found</h2>
+<%}else{%>
+<p>Searched book: <%=data.book_title%> </p>
+<p>Searched book id: <%=data.book_id%></p>
+<%}%>
+
+<form method="POST" action="/search">
+Student ID:<input type="text" name="std_ID" placeholder="Enter searched book ID">
+<button>Search</button>
+</form>
