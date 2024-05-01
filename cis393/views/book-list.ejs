@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-list</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <a href="http://localhost:3000/library">
+        <button>Home</button>
+    </a>
+    <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">List of Books</h1>
+    <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Librarian favorites</h2>
+    <ul>
+        <li>The Great Gatsby -by F. Scott Fitzgerald</li>
+        <li>To Kill a Mockingbird -by Harper Lee</li>
+        <li>1984 -by George Orwell</li>
+        <li>The Catcher in the Rye -by J.D. Salinger</li>
+        <li>Harry Potter and the Sorcerer's Stone -by J.K. Rowling</li>
+        <li>Pride and Prejudice -by Jane Austen</li>
+    </ul>
+    <h1>Book list</h1>
+    <table border=0>
+        <tr style="text-align:left; background-color:blanchedalmond">
+            <th>book id</th>
+            <th>title</th>
+            <th>Author name</th>
+            
+        </tr>
+        <% data.forEach(function(book){ %>
+            <tr style="text-align:left; background-color:rgb(231, 226, 237)"">
+                <td><%= book.book_id %></td>
+                <td><%= book.book_title %></td>
+                <td><%=book.auth_name%></td>
+                
+            <% }) %>
+            </tr>
+            
+            </table>
+            
+
+</body>
+</html>
