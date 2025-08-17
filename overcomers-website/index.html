@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="OverComers Youth Football in Bloomington-Normal, Illinois. Building character, discipline, and teamwork through youth football." />
+  <title>OverComers Youth Football | Bloomington-Normal, IL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="OverComers home">
+        <span class="brand-mark" aria-hidden="true">🏈</span>
+        <span class="brand-text">OverComers Youth Football</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#registration">Registration</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="hero-title">OverComers Youth Football</h1>
+          <p class="hero-tagline">Bloomington–Normal, Illinois • Building character, discipline, and teamwork.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#registration">Register now</a>
+            <a class="btn btn-ghost" href="#about">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>About OverComers</h2>
+          <p>We are a community youth football program serving Bloomington–Normal, Illinois. Our mission is to help young athletes grow on and off the field through coaching, mentorship, and a positive team culture.</p>
+        </header>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Coaching Philosophy</h3>
+            <p>We teach fundamentals, effort, and sportsmanship. Players learn to overcome challenges with grit and a growth mindset.</p>
+          </article>
+          <article class="card">
+            <h3>Ages & Divisions</h3>
+            <p>Programs for grades 1–8 with age and skill-appropriate instruction. New and experienced players are welcome.</p>
+          </article>
+          <article class="card">
+            <h3>Season Timeline</h3>
+            <ul class="list">
+              <li>Preseason conditioning: July</li>
+              <li>Practices begin: August</li>
+              <li>Games: September–October</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="registration" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Registration</h2>
+          <p>Complete the form below to register a player. After submitting, you can download a copy of your registration details. Scholarships are available.</p>
+        </header>
+
+        <form id="registration-form" class="form" novalidate>
+          <fieldset class="fieldset">
+            <legend>Player information</legend>
+            <div class="grid">
+              <div class="field">
+                <label for="playerFirstName">First name</label>
+                <input id="playerFirstName" name="playerFirstName" type="text" autocomplete="given-name" required />
+              </div>
+              <div class="field">
+                <label for="playerLastName">Last name</label>
+                <input id="playerLastName" name="playerLastName" type="text" autocomplete="family-name" required />
+              </div>
+              <div class="field">
+                <label for="playerBirthdate">Birthdate</label>
+                <input id="playerBirthdate" name="playerBirthdate" type="date" required />
+              </div>
+              <div class="field">
+                <label for="playerGrade">Grade (fall)</label>
+                <select id="playerGrade" name="playerGrade" required>
+                  <option value="" disabled selected>Select grade</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="playerSchool">School</label>
+                <input id="playerSchool" name="playerSchool" type="text" />
+              </div>
+              <div class="field">
+                <label for="playerPositions">Positions (interest)</label>
+                <select id="playerPositions" name="playerPositions" multiple>
+                  <option>QB</option>
+                  <option>RB</option>
+                  <option>WR</option>
+                  <option>TE</option>
+                  <option>OL</option>
+                  <option>DL</option>
+                  <option>LB</option>
+                  <option>DB</option>
+                  <option>ST</option>
+                </select>
+                <small class="help">Hold Ctrl/Cmd to select multiple.</small>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Parent/Guardian</legend>
+            <div class="grid">
+              <div class="field">
+                <label for="guardianName">Name</label>
+                <input id="guardianName" name="guardianName" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="guardianEmail">Email</label>
+                <input id="guardianEmail" name="guardianEmail" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="guardianPhone">Phone</label>
+                <input id="guardianPhone" name="guardianPhone" type="tel" inputmode="tel" placeholder="(309) 555-1234" required />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Emergency & Medical</legend>
+            <div class="grid">
+              <div class="field">
+                <label for="emergencyContact">Emergency contact</label>
+                <input id="emergencyContact" name="emergencyContact" type="text" />
+              </div>
+              <div class="field">
+                <label for="emergencyPhone">Emergency phone</label>
+                <input id="emergencyPhone" name="emergencyPhone" type="tel" inputmode="tel" placeholder="(309) 555-9876" />
+              </div>
+              <div class="field field-col-span">
+                <label for="medicalNotes">Medical notes / allergies</label>
+                <textarea id="medicalNotes" name="medicalNotes" rows="3" placeholder="List any health concerns coaches should know about"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Agreements</legend>
+            <div class="stack">
+              <label class="checkbox">
+                <input id="acceptWaiver" name="acceptWaiver" type="checkbox" required />
+                <span>I have read and accept the liability waiver.</span>
+              </label>
+              <label class="checkbox">
+                <input id="acceptConduct" name="acceptConduct" type="checkbox" required />
+                <span>I agree to the player and parent code of conduct.</span>
+              </label>
+              <label class="checkbox">
+                <input id="acceptMedia" name="acceptMedia" type="checkbox" />
+                <span>I consent to photo/media release.</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit registration</button>
+            <button type="button" id="downloadRegistration" class="btn btn-ghost">Download copy</button>
+          </div>
+
+          <div id="registrationAlert" class="form-alert" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Questions about the program, volunteering, or donations? We’d love to hear from you.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a id="contactEmail" href="mailto:overcomers@example.com">overcomers@example.com</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Phone</h3>
+            <p><a href="tel:+13095551234">(309) 555-1234</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Practice area</h3>
+            <p>Bloomington–Normal, Illinois</p>
+            <p><a href="https://maps.google.com/?q=Bloomington-Normal,+IL" target="_blank" rel="noreferrer noopener">Open in Maps</a></p>
+          </div>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <div class="grid">
+            <div class="field">
+              <label for="contactName">Your name</label>
+              <input id="contactName" name="contactName" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="contactEmailInput">Your email</label>
+              <input id="contactEmailInput" name="contactEmailInput" type="email" autocomplete="email" required />
+            </div>
+            <div class="field field-col-span">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send</button>
+            <a id="mailtoFallback" class="btn btn-ghost" href="mailto:overcomers@example.com?subject=OverComers%20Inquiry" target="_blank" rel="noreferrer noopener">Open email app</a>
+          </div>
+          <div id="contactAlert" class="form-alert" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> OverComers Youth Football • Bloomington–Normal, IL</p>
+      <p class="footer-small">OverComers is a community-led youth sports organization. All trademarks are property of their respective owners.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+</body>
+</html>
